@@ -18,24 +18,29 @@ To install the project, clone the repository and open the `index.html` file in y
 
 ## Local Storage Implementation 💾
 The selected values are stored in the browser's local storage for persistence. Here’s a simplified example of how to implement this in JavaScript:
-    ```bash
-            // Function to add product to cart
-                function addToCart(product) {
-                    // Retrieve existing cart from local storage
-                    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-                    // Add the new product to the cart
-                    cart.push(product);
-                    // Save the updated cart back to local storage
-                    localStorage.setItem('cart', JSON.stringify(cart));
-                }
-// Example usage
+```javascript
+// 🛒 Function to add product to cart
+function addToCart(product) {
+    // 📦 Retrieve existing cart from local storage
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    // ➕ Add the new product to the cart
+    cart.push(product);
+    
+    // 💾 Save the updated cart back to local storage
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Example usage of the addToCart function
 const product = {
-id: 1,
-name: 'Product Name',
-quantity: 2,
-size: 'M',
-color: 'Red'
+    id: 1,               // 🆔 Product ID
+    name: 'Product Name', // 🏷️ Product Name
+    quantity: 2,         // 🔢 Selected Quantity
+    size: 'M',           // 📏 Selected Size
+    color: 'Red'         // 🎨 Selected Color
 };
+
+// 🛍️ Call the function to add the product to the cart
 addToCart(product);
 
 ## Contributing 🤝
