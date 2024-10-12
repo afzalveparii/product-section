@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title> Product Section</title>
+    <link rel="icon" href="./assets/shopping-cart.png" type="image/png">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>YAY! It's BOGO</h1>
+        <div id="unit-options">
+            <div class="unit-option">
+                <input type="radio" id="unit1" name="unit" value="1">
+                <label for="unit1">1 Unit</label>
+                <span class="discount-badge">10% Off</span>
+                <span class="price">$10.00 USD <span class="original-price">$24.00 USD</span></span>
+                <div class="size-color-options">
+                    <div>
+                        <label for="size1">Size</label>
+                        <select id="size1">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color1">Colour</label>
+                        <select id="color1">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-option">
+                <input type="radio" id="unit2" name="unit" value="2" checked>
+                <label for="unit2">2 Unit</label>
+                <span class="discount-badge">20% Off</span>
+                <span class="price">$18.00 USD <span class="original-price">$48.00 USD</span></span>
+                <span class="most-popular">MOST POPULAR</span>
+                <div class="size-color-options">
+                    <div>
+                        <label for="size2-1">Size for #1</label>
+                        <select id="size2-1">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color2-1">Colour for #1</label>
+                        <select id="color2-1">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="size2-2">Size for #2</label>
+                        <select id="size2-2">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color2-2">Colour for #2</label>
+                        <select id="color2-2">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="unit-option">
+                <input type="radio" id="unit3" name="unit" value="3">
+                <label for="unit3">3 Unit</label>
+                <span class="discount-badge">30% Off</span>
+                <span class="price">$24.00 USD <span class="original-price">$72.00 USD</span></span>
+                <div class="size-color-options">
+                    <div>
+                        <label for="size3-1">Size for #1</label>
+                        <select id="size3-1">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color3-1">Colour for #1</label>
+                        <select id="color3-1">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="size3-2">Size for #2</label>
+                        <select id="size3-2">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color3-2">Colour for #2</label>
+                        <select id="color3-2">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="size3-3">Size for #3</label>
+                        <select id="size3-3">
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color3-3">Colour for #3</label>
+                        <select id="color3-3">
+                            <option>Black</option>
+                            <option>White</option>
+                            <option>Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="total">
+            <span>Free Delivery</span>
+            <span id="total-price">Total: $18.00 USD</span>
+        </div>
+
+        <div id="custom-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="modal-close">&times;</span>
+                <h2>Confirm Cart Details</h2>
+                <p>You selected <span id="selected-unit">1</span> unit(s).</p>
+                <label for="quantity">Enter Quantity:</label>
+                <input id="quantity" type="number" min="1" value="1" />
+                <label for="coupon">Apply Coupon Code:</label>
+                <input id="coupon" type="text" placeholder="Enter coupon code" />
+                <button id="confirm-add">Add to Cart</button>
+            </div>
+        </div>
+        <button class="add-to-cart">+ Add to Cart</button>
+        <p class="powered-by">@ Powered by Pumper</p>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
