@@ -36,6 +36,7 @@ h1 {
 }
 .unit-option.selected {
     border: 2px solid #ff4e8d;
+    padding-top: 20px;
 }
 .unit-option input[type="radio"] {
     margin-right: 10px;
@@ -65,7 +66,7 @@ h1 {
     color: white;
     font-size: 0.8em;
     padding: 2px 6px;
-    border-top-right-radius: 8px;
+    border-top-right-radius: 5px;
 }
 .size-color-options {
     display: grid;
