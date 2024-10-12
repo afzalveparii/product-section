@@ -42,7 +42,7 @@ const product = {
 
 // 🛍️ Call the function to add the product to the cart
 addToCart(product);
-
+```
 ## Contributing 🤝
 We welcome contributions! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
